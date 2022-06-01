@@ -17,8 +17,8 @@ public class Main {
             temp = temp / 10;
         }
 
-        int ek = k % d;
-        if (ek < 0) {
+        int ek = k % d;   // [#1] 
+        if (ek < 0) {     // [#2]
             ek = d + ek;
         }
 
@@ -41,3 +41,16 @@ public class Main {
 
     }
 }
+
+/*
+#1.
+if k = 12 and d = 5 then ek will be 2 
+that means if we rotate a no by 12 times and by 2 times they give us the same result 
+then why to do mehnat of rotating a number by 12 times jab kaam 2 baat ke rotation me chal rha ho
+
+#2. 
+when k is -ve that means aage se k digits utha ke piche lga do
+if number have 5 digits then rotating a number by -1 times is equal to rotating a number by 4 times 
+that why when k is -ve we add no of digits in it so that we could get the acutal k 
+
+*/

@@ -24,3 +24,18 @@ public class Main{
         System.out.println(lcm);
     }
 }
+
+
+/* LESS OPTIMIZED APPROACH 
+
+int num = Math.min(n1,n2);
+
+for(int div = num/2; div>=2; div--){
+    if(n1%div== 0 && n2 % div == 0){
+        System.out.println(div);   // gcd
+        System.out.println(n1*n2/div); // lcm
+      break;
+    } 
+}
+
+*/
