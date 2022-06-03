@@ -17,10 +17,19 @@ public class Main {
                 {
                     System.out.print(val+"\t");
                     // Calcultion of iC(j+1) using iCj
-                    val = val* (i-j)/(j+1);  //B/c nCr+1=nCr*(n-r)/(r+1)
+                    val = val* (i-j)/(j+1);  //B/c nCr+1=nCr*(n-r)/(r+1) [#1]
                 }
                 System.out.println();
             }
 
         }
     }
+
+// [#1]
+
+// do not write this expression like this
+// val = val* ((i-j)/(j+1));
+
+// kyunki isse pahle integer division hoga 
+// aur integer division 0 dega jisse pattern me jo num hum chahte h uski jagah 0 aa jaayega
+// kyunki val*0 = 0.

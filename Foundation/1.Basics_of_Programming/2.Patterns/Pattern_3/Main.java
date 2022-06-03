@@ -74,3 +74,8 @@ public class Main {
 //
 //    }
 //}
+
+
+/*
+Note : To make relation start from extreme points.
+*/

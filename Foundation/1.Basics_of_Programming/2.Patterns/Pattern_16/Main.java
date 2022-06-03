@@ -28,8 +28,8 @@ public class Main {
             }
 
             //print right values
-            int rcnt = (r == n) ? r - 1 : r; //rcnt = row count matlab row me kitni values hai //kyonki last line me right values r-1 se start hai
-            int rv = rcnt;  // row value ko hum rcnt se start krte hai kyunki humne rcnt ko iss trike se manage kiya hai ki wo last wali row ko chhodke usi row no. ke equal hoga jisko hum decreasing order me fir print kar denge
+            int rcnt = (r == n) ? r - 1 : r; //rcnt = row count matlab row me kitni values hai //kyonki last line me right values r-1 se start hai 
+            int rv = rcnt;  // row value ko hum rcnt se start krte hai kyunki humne rcnt ko iss trike se manage kiya hai ki wo last wali row ko chhodke baki rows ke liye usi row no. ke equal hoga, jisko hum decreasing order me fir print kar denge
             for (int c = 1; c <= rcnt; c++) {
                 System.out.print(rv + "\t");
                 rv--;
@@ -97,4 +97,46 @@ public static void main(String[] args) {
  }
 }
 
+*/
+
+/* Same uper wala hi logic h bas thoda code me change h
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+
+        int n = scn.nextInt();
+
+        int valc = 1;
+        int spc = 2 * n - 3;
+
+        for (int r = 1; r <= n; r++) {
+
+            int val = 1;
+            
+            for (int c = 1; c <= valc; c++) {
+                System.out.print(val++ + "\t");
+            }
+            for (int c = 1; c <= spc; c++) {
+                System.out.print("\t");
+            }
+            if (r == n) {
+                System.out.print(n + "\t");
+            }
+            for (int c = 1; c <= valc; c++) {
+                System.out.print(--val + "\t");
+            }
+
+            System.out.println();
+
+            spc -= 2;
+            if (r != n - 1)
+                valc++;
+        }
+
+    }
+}
 */

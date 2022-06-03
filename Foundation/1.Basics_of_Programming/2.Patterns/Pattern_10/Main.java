@@ -48,7 +48,7 @@ public class Main {
 //        //1. Row spilitting(work)
 //
 //        int lspc = n / 2;
-//        int mspc = -1;
+//        int mspc = -1;  // why -1? ans : by analization agr hum ise -1 rkhe to hmesha +2 kr skenge
 //
 //        for (int r = 1 ; r <= n; r++)
 //        {
