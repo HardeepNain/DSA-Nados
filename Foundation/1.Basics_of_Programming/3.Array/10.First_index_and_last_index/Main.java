@@ -29,7 +29,7 @@ public class Main{
             int mid = (lo + hi)/2;
 
             if(arr[mid] == k){
-                fi = mid;
+                fi = mid;       // we don't need to check explicity that Is mid < fi b/c it will be as we are decreasing hi that means next mid will be lesser compare to the old one.
                 hi = mid-1;
             }else if(arr[mid] < k){
                 lo = mid+1;
@@ -49,7 +49,7 @@ public class Main{
             int mid = (lo + hi)/2;
 
             if(arr[mid] == k){
-                li = mid;
+                li = mid;       // we don't need to check explicity that Is mid > li b/c it will be as we are increasing li that means next mid will be higher compare to the old one.
                 lo = mid+1;
             }else if(arr[mid] < k){
                 lo = mid+1;

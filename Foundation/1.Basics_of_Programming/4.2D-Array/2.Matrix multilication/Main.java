@@ -34,10 +34,10 @@ public class Main{
 
             // matrix multiplication
 
-            for(int i = 0 ; i < res.length ; i++){
-                for(int j = 0 ; j < res[0].length ; j++){
+            for(int i = 0 ; i < res.length ; i++){      // ye res matrix ki row ko target krega saathi hi mat1 ki rows ko bhi target krega
+                for(int j = 0 ; j < res[0].length ; j++){  // ye res matrix ki col ko target krega saath hi mat2 ki col ko bhi target krega
 
-                    for(int k = 0 ; k < nc1 ; k++){
+                    for(int k = 0 ; k < nc1 ; k++){   // mat1 ki col aur mat2 ki row ko target krne ke liye
                         res[i][j] = res[i][j] + (mat1[i][k] * mat2[k][j]);
                     }
                 }

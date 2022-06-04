@@ -28,7 +28,7 @@ public class Main{
 
             if(k == arr[mid]){
                 ceil = floor = arr[mid];
-                break;
+                break;      // kyunki aage kuch krne ka faayda hi nhi h 
             }else if(k < arr[mid]){
                 hi = mid-1;
                 ceil = arr[mid];

@@ -24,9 +24,9 @@ public class Main{
         int nrow = max;
         int ncol = n;
 
-        for(int row = 0 ; row < nrow; row++){
+        for(int row = 1 ; row <= nrow; row++){
             for(int i = 0 ; i < ncol ; i++){
-                if(arr[i] > row){   // jab bhi arr[i] ki value row se bdi hogi star print hoga.
+                if(arr[i] >= row){   // jab bhi arr[i] ki value row se bdi hogi star print hoga.
                     System.out.print("*\t");
                 }else{
                     System.out.print("\t");

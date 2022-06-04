@@ -24,9 +24,9 @@ public class Main{
         int nrow = max;
         int ncol = n;
 
-        for(int row = nrow ; row >= 1 ; row--){
-            for(int col = 0 ; col < ncol ; col++){
-                if(arr[col] >= row){   // stars tabhi print hoge jab arr ke us index ki value row se bdi hogi
+        for(int row = nrow ; row >= 1 ; row--){    // kitni rows h us hisab se loop lgaya
+            for(int col = 0 ; col < ncol ; col++){  // kitne cols h us hisab se loop lgaya
+                if(arr[col] >= row){   // stars tabhi print hoge jab arr ke us index ki value row se bdi/equal hogi
                     System.out.print("*\t");
                 }else{
                     System.out.print("\t");

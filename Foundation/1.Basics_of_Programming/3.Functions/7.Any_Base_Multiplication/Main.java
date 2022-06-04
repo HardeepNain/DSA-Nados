@@ -23,7 +23,7 @@ public class Main {
             n2 = n2 / 10;
 
             int ans = singleDigitMult(d2, n1, b);
-            res = anyBaseAddition(res, ans * pow, b);
+            res = anyBaseAddition(res, ans * pow, b);  // yha pe dhyan rkhna ki pow ko ans se multiply krke bhej rhe h aur res me sidha store krwa rhe h jo result aa rha h naki res me + krwa rhe h
 
             pow = pow * 10;
 

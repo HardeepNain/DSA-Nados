@@ -27,12 +27,12 @@ public class Main {
         // Add Two Arrays
 
         int size = n1 > n2 ? n1 : n2;
-        int res[] = new int[size];
+        int res[] = new int[size];  // res ka size us array ke equal hoga jiska size bda h
 
         int p1 = n1 - 1, p2 = n2 - 1, p3 = size - 1, carry = 0;
 
         while (p1 >= 0 || p2 >= 0) {
-            int d1 = p1 < 0 ? 0 : arr1[p1];
+            int d1 = p1 < 0 ? 0 : arr1[p1];  // jab tk pointer 0 ya usse bda hoga tb tak array se val nikelgi
             int d2 = p2 < 0 ? 0 : arr2[p2];
 
             int sum = d1 + d2 + carry;
